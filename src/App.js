@@ -4,6 +4,9 @@ import ItemListContainer from './container/ItemListContainer/ItemListContainer';
 import Brand from './components/Brand/Brand';
 import Categoria from './components/Categoria/Categoria';
 import CartWidget from './components/CartWidget/CartWidget';
+import ItemDetailContainer from './container/ItemDetailContainer/ItemDetailContainer';
+
+
 
 
 function App() {
@@ -23,8 +26,9 @@ function App() {
       <CartWidget/>
      </NavBar>
 
-     <ItemListContainer/>  
-    </>
+     <ItemListContainer/> 
+     <ItemDetailContainer/>
+     </>
   )
 }
 

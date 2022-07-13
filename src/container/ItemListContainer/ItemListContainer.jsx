@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react'
 
 import './ItemListContainer.css'
 
-import task from '../../components/fetch';
+import task from '../../components/producto';
 import ItemList from '../ItemList/ItemList'
 import Loader from '../../components/Loader/Loader';
 

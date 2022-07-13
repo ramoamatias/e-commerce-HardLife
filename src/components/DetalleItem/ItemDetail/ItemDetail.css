@@ -1,0 +1,91 @@
+.itemDetail{
+    padding: 10px 8%;
+}
+
+.contenedorDetalle {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.containerImagenes {
+    width: 70vw;
+    padding: 10px;
+}
+
+.containerImg img {
+    width: 100px;
+    margin: 0 10px;
+}
+/* .containerCaracteristicas {
+    padding: 40px;
+} */
+.contenedorCompra{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    padding: 20px;
+    border: 1px solid rgb(225, 213, 213);
+    box-shadow: 1px 1px 5px rgb(179 176 176);
+    border-radius: 5px;
+    margin-left: 100px;
+}
+.contenedorCompra h1 {
+    text-align: center;
+}
+
+.contenedorCompra p {
+    font-size: 2rem;
+}
+.btnCompra {
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    padding: 10px 25px;
+    font-size: 1.3rem;
+
+}
+
+.btnCompra:hover {
+    background-color: white;
+    color: blueviolet;
+    border: 2px solid blueviolet;
+}
+
+.bodyDetalle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bodyMarca {
+    font-size: 1.5rem;
+}
+
+.bodyTitle {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.bodyId {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.bodyDescripcion {
+    display: flex;
+    flex-direction: column;
+}
+
+.bodyDescripcion div {
+    margin: 20px 0;
+}
+.itemDescripcion {
+    width: 50%;
+}

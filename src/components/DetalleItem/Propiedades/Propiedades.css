@@ -1,0 +1,123 @@
+.subtituloPropiedades {
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+}
+
+.rotateClose {    
+    transform: rotate(-90deg);
+}
+
+.rotateOpen {
+    transform: rotate(90deg);
+}
+
+.novisible{
+    display: none;
+}
+
+/* Debo de jugar con @media ya que para cierto tamaño el visible y el invisible haran lo mismo 
+esto es para que no haya conflicto y se oculte cuando tenga una resolucion mayor */
+.visible {
+    display: inline-block;
+}
+
+
+.producto{
+    position:relative;
+}
+.producto::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background-color: black;
+    bottom: 0;
+    right:13px;
+    transform: rotate(45deg);
+}
+
+.producto::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background-color: black;
+    right: 0;
+    bottom: 0;
+    transform: rotate(-45deg);
+}
+
+.productoActivo{
+    position:relative;
+}
+.productoActivo::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background-color: black;
+    bottom: 0;
+    right:13px;
+    transform: rotate(-45deg);
+}
+
+.productoActivo::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background-color: black;
+    right: 0;
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+.containerPropiedad{
+    width: 100%;
+    margin: 10px auto;
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid blueviolet;
+}
+@media screen and (min-width:700px) {
+    .productoActivo::before {
+        display: none;
+    }
+    .productoActivo::after {
+        display: none;
+    }
+
+    .producto::before {
+        display: none;
+    }
+    .producto::after {
+        display: none;
+    }
+
+
+    .visible {
+        display: inline-block;
+    }
+
+    .novisible {
+        display: inline-block;
+    }
+    
+}
+
+.containerPropiedad {
+    width: 100%;
+}
+.containerPropiedad div {
+    width: 100%;
+}
+
+.propiedad {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* text-align: ; */
+
+}
