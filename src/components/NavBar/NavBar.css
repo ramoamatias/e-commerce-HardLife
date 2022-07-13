@@ -1,0 +1,28 @@
+.navbar{
+    width: 100%;
+    background-color: blueviolet;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width:600px) {
+    .navbar {
+      flex-direction: column;  
+    }
+
+    .navbar * {
+        margin: 10px 0;
+    }
+}

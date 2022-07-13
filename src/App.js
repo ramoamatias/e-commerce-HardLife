@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NavBar/NavBar';
+import ItemListContainer from './container/ItemListContainer/ItemListContainer';
+import Brand from './components/Brand/Brand';
+import Categoria from './components/Categoria/Categoria';
+import CartWidget from './components/CartWidget/CartWidget';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+     <NavBar >
+      <Brand titulo="PurityLife"/>
+      <article className='navegacion'>
+        <Categoria nombre = "Home" />
+        <Categoria nombre = "Productos"/>
+        <Categoria nombre = "Contacto"/>  
+      </article>      
+     <CartWidget/>
+     </NavBar>
+     <ItemListContainer greeting="Bienvenidos a PurityLife!"/>
+    </>
+  )
 }
+
 
 export default App;

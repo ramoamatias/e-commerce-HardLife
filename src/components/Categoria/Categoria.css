@@ -1,0 +1,7 @@
+.categoria {
+    margin: 10px 20px;
+}
+
+.categoria:hover {
+    color: red;
+}
