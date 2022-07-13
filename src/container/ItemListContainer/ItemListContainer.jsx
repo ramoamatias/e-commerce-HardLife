@@ -1,7 +1,25 @@
+import {useState, useEffect} from 'react'
+
 import './ItemListContainer.css'
+
+import task from '../../components/fetch';
+import ItemList from '../ItemList/ItemList'
+import Loader from '../../components/Loader/Loader';
+
 function ItemListContainer({ greeting }) {
+  const [productos, setProductos] = useState([]);
+  const [loading, setloading] = useState(true);
+
+  useEffect(()=>{
+    task
+     .then(res=> setProductos(res))
+     .finally(()=>setloading(false));
+  },[]);
+
   return (
-    <div className="container">{ greeting }</div>
+    <>
+      {loading ? <Loader/> : <ItemList productos = {productos}/>}
+    </>
   )
 }
 

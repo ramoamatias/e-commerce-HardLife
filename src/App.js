@@ -5,20 +5,25 @@ import Brand from './components/Brand/Brand';
 import Categoria from './components/Categoria/Categoria';
 import CartWidget from './components/CartWidget/CartWidget';
 
-function App() {
 
+function App() {
   return (
     <>
      <NavBar >
-      <Brand titulo="PurityLife"/>
+      <Brand titulo="HardLife"/>
+      
       <article className='navegacion'>
         <Categoria nombre = "Home" />
-        <Categoria nombre = "Productos"/>
-        <Categoria nombre = "Contacto"/>  
+        <Categoria nombre = "Notebooks"/>
+        <Categoria nombre = "Monitores"/>  
+        <Categoria nombre = "Celulares"/>  
+        <Categoria nombre = "Tablets"/>  
       </article>      
-     <CartWidget/>
+      
+      <CartWidget/>
      </NavBar>
-     <ItemListContainer greeting="Bienvenidos a PurityLife!"/>
+
+     <ItemListContainer/>  
     </>
   )
 }
