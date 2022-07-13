@@ -1,4 +1,5 @@
 import React, { useEffect,useState } from 'react';
+import './ImgContainer.css'
 
 function ImgContainer({pictures}) {
     const [imagenes,setImagenes] = useState([]);
@@ -27,5 +28,6 @@ function ImgContainer({pictures}) {
     </section>
   )
 }
+
 
 export default ImgContainer

@@ -10,7 +10,8 @@ function ItemList(props) {
                 id={el.id} 
                 title={el.title} 
                 price={el.price} 
-                pictureUrl={el.pictureUrl}/>
+                pictureUrl={el.pictureUrl}
+                categoria={el.categoria}/>
         )}
     </section>
   )

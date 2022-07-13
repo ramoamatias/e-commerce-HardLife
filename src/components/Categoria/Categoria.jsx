@@ -2,7 +2,7 @@ import "./Categoria.css";
 
 const Categoria = ({ nombre }) => {
   return (
-   <p className="categoria">{ nombre }</p>
+   <p className="categoria button">{ nombre }</p>
   )
 }
 

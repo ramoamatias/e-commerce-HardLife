@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './Item.css';
 
 function Item(props) {
@@ -8,7 +9,9 @@ function Item(props) {
       <article className='card-body'>
           <p className="card-title">{props.title}</p>
           <span className="card-price">${props.price}</span>
-          <button className="card-btn">Ver Más</button>
+          <Link to={`/detalle/${props.id}`} >
+            <button className="card-btn">Ver Más</button>
+          </Link>
       </article>
     </div>
   )

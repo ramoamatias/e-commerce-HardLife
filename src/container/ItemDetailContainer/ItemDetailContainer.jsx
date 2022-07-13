@@ -2,13 +2,13 @@ import {useState, useEffect} from 'react'
 import task from '../../components/DetallesProductos';
 import Loader from '../../components/Loader/Loader';
 import ItemDetail from '../../components/DetalleItem/ItemDetail/ItemDetail';
+import { useParams } from 'react-router';
 
 function ItemListContainer({ greeting }) {
   const [detalle, setDetalle] = useState({});
   const [loading, setloading] = useState(true);
 
-
-  let id = 1;
+  const {id} = useParams();
 
   useEffect(()=>{
     task(id)
@@ -23,5 +23,6 @@ function ItemListContainer({ greeting }) {
     </>
   )
 }
+
 
 export default ItemListContainer

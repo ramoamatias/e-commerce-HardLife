@@ -9,6 +9,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 6px;
+    position: sticky;
+    top: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
 }
 
 .navegacion {
@@ -17,12 +24,27 @@
     align-items: center;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:850px) {
     .navbar {
       flex-direction: column;  
+      position: relative;
     }
 
     .navbar * {
         margin: 10px 0;
     }
+
+    .navegacion {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
+
+/* [aria-current="page"] { */
+.active {
+    text-decoration: none;
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+}
+
