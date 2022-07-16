@@ -3,8 +3,27 @@
     flex-direction: row;
     align-items: center;
     padding: 10px;
+    position: relative;
 }
 
 .cartWidget * {
     margin: 0 5px;
+}
+.imgWidget{
+    margin-right: 15px;
+}
+
+.counterCarritoCargado{
+    position: absolute;
+    top: -8px;
+    left: 25px;
+    padding: 3px;
+    background: white;
+    color: blueviolet;
+    border-radius: 50%;
+    width: 30px;
+}
+
+.counterCarritoSinProductos {
+    display: none;
 }

@@ -1,0 +1,14 @@
+.imgActiva,
+.imgInactiva {
+    margin: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(225, 213, 213);
+}
+
+.imgActiva {
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+
+.imgInactiva{
+    box-shadow: 1px 1px 5px rgb(179 176 176);
+}

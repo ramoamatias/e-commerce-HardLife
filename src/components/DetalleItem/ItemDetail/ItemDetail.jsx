@@ -1,12 +1,29 @@
+import {useContext, useState} from "react"
+
 import './ItemDetail.css'
+
 import Descripcion from '../Descripcion/Descripcion';
 import ImgContainer from '../ImgContainer/ImgContainer';
 import Propiedades from '../Propiedades/Propiedades';
+import Counter from '../../Counter/Counter';
+
+import {CarritoContext} from '../../CartContext/CartContext'
+import { Link } from "react-router-dom";
 
 
-function ItemDetail(props) {
-    const {id, title,picture_url, price,marca,procesador,memoria,sistema_operativo,imagen,conectividad,detalles,dimensiones,bateria,modelo,descripcion} = props.detalle;
-  
+function ItemDetail({ detalle }) {
+    const [cantidadProductos,carrito,clear,removeProducto,addProducto] = useContext(CarritoContext);
+    const [cantidadAgregada, setCantidadAgregada] = useState();
+
+    const {id, title,picture_url, price,marca,stock,procesador,memoria,sistema_operativo,imagen,conectividad,detalles,dimensiones,bateria,modelo,descripcion} = detalle;
+
+    const agregarACarrito = (cantidad) => {
+        addProducto(detalle,cantidad);
+        setCantidadAgregada(cantidad);
+    }
+
+
+
     return (
       <div className='itemDetail'>
           <div className='contenedorDetalle'>
@@ -14,7 +31,13 @@ function ItemDetail(props) {
               <article className='contenedorCompra'>
                   <h1>{title}</h1> 
                   <p>${price}</p>
-                  <button className='btnCompra'>Comprar</button>
+                  {cantidadAgregada 
+                     ? <div className="contenedorCompraRealizada">
+                        <Link to='/carrito'><button className="btnCompra">Terminar compra</button></Link>
+                        <Link to='/'><button className="btnCompra">Continuar Compra</button></Link>
+                       </div>
+                     : <Counter stock={stock} onAdd={agregarACarrito}/>}
+                     <p className="stockDisponible">{stock} Disponibles </p>
               </article>
           </div>
           <section className='bodyDetalle'>

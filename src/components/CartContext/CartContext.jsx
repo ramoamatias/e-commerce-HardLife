@@ -1,15 +1,14 @@
 import { createContext, useState } from "react"
 
-const CarritoContext = createContext();
+export const CarritoContext = createContext();
 
-const CartContext  = ({ children }) => {
+export const CartContext  = ({ children }) => {
     const [cantidadProductos, setcantidadProductos] = useState(0); //contadorProductos
     const [carrito,setCarrito] = useState([]); //nuestroCarrito
-
     
     //Buscamos el item si existe dentro del 
     const isIntCart = (id) => {  
-        carrito.find(el => el.item.id === id ) ? true : false;
+        return carrito.find(el => el.item.id == id ) ? true : false;
     }
     
     const clear = () => setCarrito([]);
@@ -24,15 +23,13 @@ const CartContext  = ({ children }) => {
     }
     
     const addProducto = (producto,cantidad) => {
-
-        if (isIntCart(producto.id)) {
+        if (isIntCart(producto.id) === true) {
             let productoRecuperado = recuperarProducto(producto.id);
             productoRecuperado.cantidad += cantidad;
-        } else {
-            carrito.push({item:producto,cantidad});
+            setCarrito(carrito)
         }
-
-        setcantidadProductos(carrito);
+        
+        setCarrito([...carrito,{item:producto,cantidad}])
         setcantidadProductos(cantidadProductos + cantidad);
     }
 
@@ -45,10 +42,10 @@ const CartContext  = ({ children }) => {
     const posicionProducto = id => carrito.findIndex(el => el.item.id === id );
 
     return(
-        <ThemeContext.Provider value={[cantidadProductos,carrito,clear,removeProducto,addProducto]}>
+        <CarritoContext.Provider value={[cantidadProductos,carrito,clear,removeProducto,addProducto]}>
             {children}
-        </ThemeContext.Provider>
+        </CarritoContext.Provider>
     );
 }
 
-export default CartContext;
+
