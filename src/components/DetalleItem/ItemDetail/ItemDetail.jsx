@@ -30,7 +30,7 @@ function ItemDetail({ detalle }) {
               <ImgContainer pictures={picture_url}/>
               <article className='contenedorCompra'>
                   <h1>{title}</h1> 
-                  <p>${price}</p>
+                  <p>${Intl.NumberFormat('de-DE').format(price)}</p>
                   {cantidadAgregada 
                      ? <div className="contenedorCompraRealizada">
                         <Link to='/carrito'><button className="btnCompra">Terminar compra</button></Link>

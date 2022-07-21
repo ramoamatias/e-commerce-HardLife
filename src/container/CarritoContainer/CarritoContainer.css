@@ -1,0 +1,47 @@
+.carritoContainer {
+    padding: 10px 60px 0;
+}
+
+
+.carritoContainerTotal{
+    margin: 10px auto;
+    width: 350px;
+    text-align: center;
+}
+
+.valorTotal {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.carritoBtn {
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid blueviolet;
+    font-weight: bold;
+    padding: 10px 5px;
+    margin: 10px;
+    /* font-size: 1.3rem; */
+}
+
+.carritoBtn:hover{
+    background-color: white;
+    color: blueviolet;
+    border: 2px solid blueviolet;
+}
+
+.carritoVacio {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.carritoContainer h2 {
+    border-bottom: 3px solid  rgb(211, 211, 211);
+    padding: 20px;
+    /* box-shadow: 0px 0px 1px rgb(179 176 176); */
+}

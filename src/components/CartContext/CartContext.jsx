@@ -11,7 +11,10 @@ export const CartContext  = ({ children }) => {
         return carrito.find(el => el.item.id == id ) ? true : false;
     }
     
-    const clear = () => setCarrito([]);
+    const clear = () => {
+        setCarrito([]);
+        setcantidadProductos(0);
+    };
 
     const removeProducto = id => {
         const posicion = posicionProducto(id);
@@ -23,13 +26,16 @@ export const CartContext  = ({ children }) => {
     }
     
     const addProducto = (producto,cantidad) => {
-        if (isIntCart(producto.id) === true) {
+
+        if (isIntCart(producto.id)) {
             let productoRecuperado = recuperarProducto(producto.id);
             productoRecuperado.cantidad += cantidad;
-            setCarrito(carrito)
+            // setCarrito([...carrito]);
+            setCarrito(carrito);
+        } else {
+            setCarrito([...carrito,{item:producto,cantidad}])
         }
         
-        setCarrito([...carrito,{item:producto,cantidad}])
         setcantidadProductos(cantidadProductos + cantidad);
     }
 

@@ -45,7 +45,7 @@ const productos = [
   {
     "id":1,
     "title":"Notebook Lenovo 15.6' Ryzen 5 8GB 512GB SSD IdeaPad 5 82LN00W1AR",
-    "price":143.999,
+    "price":143999,
     "picture_url":[lenovo_82LN00W1AR_1,lenovo_82LN00W1AR_2,lenovo_82LN00W1AR_3,lenovo_82LN00W1AR_4],
     "marca":"Lenovo",
     "categoria":"notebook",
@@ -100,7 +100,7 @@ const productos = [
 {
     "id":2,
     "title":"Notebook Lenovo 15,6' Core i7-1065G7 512GB 8GB IP5-81YK00FLAR",
-    "price":234.999,
+    "price":234999,
     "picture_url":[lenovo_IP581YK00FLAR_1,lenovo_IP581YK00FLAR_2,lenovo_IP581YK00FLAR_3,lenovo_IP581YK00FLAR_4],
     "marca":"Lenovo",
     "categoria":"notebook",
@@ -155,7 +155,7 @@ const productos = [
 {
     "id":3,
     "title":"Notebook Lenovo Gamer 15,6' Ryzen 7 16GB 512GB SSD Legion 5 82JW00NWAR",
-    "price":329.999,
+    "price":329999,
     "picture_url":[lenovo_82JW00NWAR_1,lenovo_82JW00NWAR_2,lenovo_82JW00NWAR_3,lenovo_82JW00NWAR_4],
     "marca":"Lenovo",
     "categoria":"notebook",
@@ -212,7 +212,7 @@ const productos = [
 {
     "id":4,
     "title":"Notebook Lenovo 16' Ryzen 9 32GB 512GB SSD IdeaPad 5 Pro 82L500WVAR",
-    "price":399.999,
+    "price":399999,
     "picture_url":[lenovo_82L500WVAR_1,lenovo_82L500WVAR_2,lenovo_82L500WVAR_3,lenovo_82L500WVAR_4],
     "marca":"Lenovo",
     "categoria":"notebook",
@@ -268,7 +268,7 @@ const productos = [
 {
     "id":5,
     "title":"Notebook Lenovo Gamer 15,6' AMD Ryzen 512GB 8GB IPG3-82EY00PR",
-    "price":239.999,
+    "price":239999,
     "picture_url":[lenovo_IPG382EY00PR_1,lenovo_IPG382EY00PR_2,lenovo_IPG382EY00PR_3,lenovo_IPG382EY00PR_4],
     "marca":"Lenovo",
     "categoria":"notebook",
@@ -323,7 +323,7 @@ const productos = [
 {
     "id":6,
     "title":"Notebook Gamer HP 16,1' Core i5 8GB 512GB SSD Victus 16-D0516LA",
-    "price":209.999,
+    "price":209999,
     "picture_url":[hp_16D0516LA_1,hp_16D0516LA_2,hp_16D0516LA_3,hp_16D0516LA_4],
     "marca":"Hp",
     "categoria":"notebook",
@@ -379,7 +379,7 @@ const productos = [
 {
     "id":7,
     "title":"Notebook HP Pavilion 15,6' AMD Ryzen 7 8GB 512GB SSD 15-EH0009LA",
-    "price":239.999,
+    "price":239999,
     "picture_url":[hp_15EH0009LA_1,hp_15EH0009LA_2,hp_15EH0009LA_3,hp_15EH0009LA_4],
     "marca":"Hp",
     "categoria":"notebook",
@@ -434,7 +434,7 @@ const productos = [
 {
     "id":8,
     "title":"Notebook HP Pavilion 15,6' AMD Ryzen 5 8GB 256GB SSD 15-EH0007LA",
-    "price":144.999,
+    "price":144999,
     "picture_url":[hp_15EH0007LA_1,hp_15EH0007LA_2,hp_15EH0007LA_3,hp_15EH0007LA_4],
     "marca":"Hp",
     "categoria":"notebook",
@@ -488,7 +488,7 @@ const productos = [
 {
     "id":9,
     "title":"Notebook Asus 15,6” Intel Core i3 4GB 256GB SSD 91X515EA-EJ1342T",
-    "price":104.999,
+    "price":104999,
     "picture_url":[asus_91X515EAEJ1342T_1,asus_91X515EAEJ1342T_2,asus_91X515EAEJ1342T_3,asus_91X515EAEJ1342T_4],
     "marca":"Asus",
     "categoria":"notebook",
@@ -543,7 +543,7 @@ const productos = [
 {
     "id":10,
     "title":"Notebook Gamer Banghó GM-15Z11 Core i5 16GB SSD 1TB GTX1650 15.6'",
-    "price":279.999,
+    "price":279999,
     "picture_url":[Bangho_GM15Z11_1,Bangho_GM15Z11_2,Bangho_GM15Z11_3,Bangho_GM15Z11_4],
     "marca":"Bangho",
     "categoria":"notebook",

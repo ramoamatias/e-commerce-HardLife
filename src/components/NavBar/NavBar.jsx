@@ -28,7 +28,9 @@ function NavBar({children}) {
             <Categoria nombre = "Tablets"/>
           </Link>
         </article>
-        <CartWidget/>
+        <Link to="carrito">
+          <CartWidget/>
+        </Link>
         
     </nav>
   )
