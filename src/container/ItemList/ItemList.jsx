@@ -8,9 +8,9 @@ function ItemList(props) {
             el=> <Item 
                 key= {el.id}
                 id={el.id} 
-                title={el.title} 
-                price={el.price} 
-                pictureUrl={el.pictureUrl}
+                titulo={el.titulo} 
+                precio={el.precio} 
+                urlImagenes={el.url_imagenes[0]}
                 categoria={el.categoria}/>
         )}
     </section>

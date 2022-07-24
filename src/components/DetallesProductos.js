@@ -44,9 +44,9 @@ import Bangho_GM15Z11_4 from "../data/img/Bangho_GM15Z11/GM15Z11_4.webp";
 const productos = [
   {
     "id":1,
-    "title":"Notebook Lenovo 15.6' Ryzen 5 8GB 512GB SSD IdeaPad 5 82LN00W1AR",
-    "price":143999,
-    "picture_url":[lenovo_82LN00W1AR_1,lenovo_82LN00W1AR_2,lenovo_82LN00W1AR_3,lenovo_82LN00W1AR_4],
+    "titulo":"Notebook Lenovo 15.6' Ryzen 5 8GB 512GB SSD IdeaPad 5 82LN00W1AR",
+    "precio":143999,
+    "url_imagenes":[lenovo_82LN00W1AR_1,lenovo_82LN00W1AR_2,lenovo_82LN00W1AR_3,lenovo_82LN00W1AR_4],
     "marca":"Lenovo",
     "categoria":"notebook",
     "stock":100,
@@ -91,17 +91,17 @@ const productos = [
         "modelo":"82LN00W1AR"
     },
     "descripcion":{
-        "diseño":"La notebook Lenovo IdeaPad 5 se diseñó poniendo especial atención en los detalles, dándole un estilo moderno con una estructura ligera para que puedas llevarla fácilmente con vos a donde sea. \n Su pantalla de 15,6 pulgadas y resolución FHD (1920x1080) junto con sus 2 altavoces estéreos con Dolby Audio, te proporcionará una gran calidad de imágen y sonido para que disfrutes de todas tus series y películas favoritas, y trabajes o estudies con comodidad.",
-        "desempeño":"Su procesador AMD Ryzen 5, su memoria de 8GB y su SSD de 512GB, se complementan para ofrecer un increíble rendimiento, eficiencia, velocidad y una gran capacidad de almacenamiento de datos.",
+        "disenio":"La notebook Lenovo IdeaPad 5 se diseñó poniendo especial atención en los detalles, dándole un estilo moderno con una estructura ligera para que puedas llevarla fácilmente con vos a donde sea. \n Su pantalla de 15,6 pulgadas y resolución FHD (1920x1080) junto con sus 2 altavoces estéreos con Dolby Audio, te proporcionará una gran calidad de imágen y sonido para que disfrutes de todas tus series y películas favoritas, y trabajes o estudies con comodidad.",
+        "desempenio":"Su procesador AMD Ryzen 5, su memoria de 8GB y su SSD de 512GB, se complementan para ofrecer un increíble rendimiento, eficiencia, velocidad y una gran capacidad de almacenamiento de datos.",
         "conectividad":"La notebook cuenta con puertos USB, HDMI, lector de tarjetas y conector 3,5mm. Además, con su conexión inalámbrica mediante Bluetooth 5.0, lograrás vincularte a cualquier dispositivo sin cables de por medio.",
         "bateria":"Con la IdeaPad 5 podrás mantener tu productividad al máximo gracias a su batería de 70Wh.",
     }
 },
 {
     "id":2,
-    "title":"Notebook Lenovo 15,6' Core i7-1065G7 512GB 8GB IP5-81YK00FLAR",
-    "price":234999,
-    "picture_url":[lenovo_IP581YK00FLAR_1,lenovo_IP581YK00FLAR_2,lenovo_IP581YK00FLAR_3,lenovo_IP581YK00FLAR_4],
+    "titulo":"Notebook Lenovo 15,6' Core i7-1065G7 512GB 8GB IP5-81YK00FLAR",
+    "precio":234999,
+    "url_imagenes":[lenovo_IP581YK00FLAR_1,lenovo_IP581YK00FLAR_2,lenovo_IP581YK00FLAR_3,lenovo_IP581YK00FLAR_4],
     "marca":"Lenovo",
     "categoria":"notebook",
     "stock":900,
@@ -146,17 +146,17 @@ const productos = [
     "modelo":"IP5-81YK00FLAR"
 },
 "descripcion":{
-    "diseño":"La notebook Lenovo IP5-81YK00FLAR cuenta con un diseño compacto y funcional. Sus prácticas medidas de: 35,6 cm de ancho x 23,3 cm de profundidad x 2,4 cm de alto y su liviano peso de tan sólo 1,9 Kg permiten que puedas llevarla con vos a donde vayas.",
-    "desempeño":"Su procesador Intel Core i7-1065G7 y su memoria de 8GB se complementan para ofrecer un mayor rendimiento con un bajo consumo de energía. Además, su disco SSD 512GB le da una gran capacidad de almacenamiento de datos y te permite guardar una mayor cantidad de contenido multimedia.",
+    "disenio":"La notebook Lenovo IP5-81YK00FLAR cuenta con un diseño compacto y funcional. Sus prácticas medidas de: 35,6 cm de ancho x 23,3 cm de profundidad x 2,4 cm de alto y su liviano peso de tan sólo 1,9 Kg permiten que puedas llevarla con vos a donde vayas.",
+    "desempenio":"Su procesador Intel Core i7-1065G7 y su memoria de 8GB se complementan para ofrecer un mayor rendimiento con un bajo consumo de energía. Además, su disco SSD 512GB le da una gran capacidad de almacenamiento de datos y te permite guardar una mayor cantidad de contenido multimedia.",
     "conectividad":"La notebook cuenta con puertos USB, HDMI, lector de tarjetas y conector 3,5mm. Además, con su conexión inalámbrica mediante Bluetooth 5.0, lograrás vincularte a cualquier dispositivo sin cables de por medio.",
     "bateria":"Con la Lenovo IP5 podrás mantener tu productividad al máximo gracias a su batería de 70Wh.",
 }
 },
 {
     "id":3,
-    "title":"Notebook Lenovo Gamer 15,6' Ryzen 7 16GB 512GB SSD Legion 5 82JW00NWAR",
-    "price":329999,
-    "picture_url":[lenovo_82JW00NWAR_1,lenovo_82JW00NWAR_2,lenovo_82JW00NWAR_3,lenovo_82JW00NWAR_4],
+    "titulo":"Notebook Lenovo Gamer 15,6' Ryzen 7 16GB 512GB SSD Legion 5 82JW00NWAR",
+    "precio":329999,
+    "url_imagenes":[lenovo_82JW00NWAR_1,lenovo_82JW00NWAR_2,lenovo_82JW00NWAR_3,lenovo_82JW00NWAR_4],
     "marca":"Lenovo",
     "categoria":"notebook",
     "stock":10,
@@ -203,17 +203,17 @@ const productos = [
     "modelo":"LG5 82JW00NWAR"
 },
 "descripcion":{
-    "diseño":"La notebook Lenovo Legion 5 posee una pantalla de 15,6 pulgadas con resolución FHD (1920x1080p) capaz de brindar una claridad de color precisa para una fidelidad completa en todos tu contenido favorito. Además, su teclado retroiluminado crea un gran ambiente de juego junto con sus dos altavoces estéreo con Nahimic Audio.",
-    "desempeño":"Su procesador AMD Ryzen 7, junto con su memoria RAM de 16GB y su SSD de 512GB, logran ofrecer el almacenamiento que necesitás y un rendimiento de juego optimizado y veloz, para que nada te detenga.",
+    "disenio":"La notebook Lenovo Legion 5 posee una pantalla de 15,6 pulgadas con resolución FHD (1920x1080p) capaz de brindar una claridad de color precisa para una fidelidad completa en todos tu contenido favorito. Además, su teclado retroiluminado crea un gran ambiente de juego junto con sus dos altavoces estéreo con Nahimic Audio.",
+    "desempenio":"Su procesador AMD Ryzen 7, junto con su memoria RAM de 16GB y su SSD de 512GB, logran ofrecer el almacenamiento que necesitás y un rendimiento de juego optimizado y veloz, para que nada te detenga.",
     "conectividad":"La Legion 5 cuenta con puertos USB, HDMI, Ethernet (RJ-45) y conexión inalámbrica mediante Wi-Fi y Bluetooth. Así, estarás preparado para conectar o conectarte con cualquier dispositivo.",
     "bateria":"Con la Legion 5 podrás mantener tu productividad al máximo gracias a su batería de 60Wh.",
 }
 },
 {
     "id":4,
-    "title":"Notebook Lenovo 16' Ryzen 9 32GB 512GB SSD IdeaPad 5 Pro 82L500WVAR",
-    "price":399999,
-    "picture_url":[lenovo_82L500WVAR_1,lenovo_82L500WVAR_2,lenovo_82L500WVAR_3,lenovo_82L500WVAR_4],
+    "titulo":"Notebook Lenovo 16' Ryzen 9 32GB 512GB SSD IdeaPad 5 Pro 82L500WVAR",
+    "precio":399999,
+    "url_imagenes":[lenovo_82L500WVAR_1,lenovo_82L500WVAR_2,lenovo_82L500WVAR_3,lenovo_82L500WVAR_4],
     "marca":"Lenovo",
     "categoria":"notebook",
     "stock":20,
@@ -259,17 +259,17 @@ const productos = [
     "modelo":"82L500WVAR"
 },
 "descripcion":{
-    "diseño":"La notebook Lenovo IdeaPad 5 Pro posee un diseño moderno y ligero que te permitirá llevarla fácilmente con vos a donde sea. Su gran pantalla de 16 pulgadas y resolución WQXGA (2560x1600) te proporcionará una calidad excelente para que puedas disfrutar de todas tus series, películas y videos favoritos.\nAdemás, cuenta con teclado retroiluminado y 2 altavoces estéreos optimizados con Dolby Atmos.",
-    "desempeño":"Su procesador AMD Ryzen 9, su memoria de 32GB y su SSD de 512 GB, se complementan para ofrecer un increíble rendimiento, eficiencia, velocidad y una gran capacidad de almacenamiento de datos.",
+    "disenio":"La notebook Lenovo IdeaPad 5 Pro posee un diseño moderno y ligero que te permitirá llevarla fácilmente con vos a donde sea. Su gran pantalla de 16 pulgadas y resolución WQXGA (2560x1600) te proporcionará una calidad excelente para que puedas disfrutar de todas tus series, películas y videos favoritos.\nAdemás, cuenta con teclado retroiluminado y 2 altavoces estéreos optimizados con Dolby Atmos.",
+    "desempenio":"Su procesador AMD Ryzen 9, su memoria de 32GB y su SSD de 512 GB, se complementan para ofrecer un increíble rendimiento, eficiencia, velocidad y una gran capacidad de almacenamiento de datos.",
     "conectividad":"La notebook cuenta con puertos USB, HDMI, lector de tarjetas y conector 3,5mm. Además, con su tecnología inalámbrica por Bluetooth, lograrás conectarte a cualquier dispositivo.",
     "bateria":"Podrás mantener tu productividad al máximo gracias a su batería de 75 Wh.",
 }
 },
 {
     "id":5,
-    "title":"Notebook Lenovo Gamer 15,6' AMD Ryzen 512GB 8GB IPG3-82EY00PR",
-    "price":239999,
-    "picture_url":[lenovo_IPG382EY00PR_1,lenovo_IPG382EY00PR_2,lenovo_IPG382EY00PR_3,lenovo_IPG382EY00PR_4],
+    "titulo":"Notebook Lenovo Gamer 15,6' AMD Ryzen 512GB 8GB IPG3-82EY00PR",
+    "precio":239999,
+    "url_imagenes":[lenovo_IPG382EY00PR_1,lenovo_IPG382EY00PR_2,lenovo_IPG382EY00PR_3,lenovo_IPG382EY00PR_4],
     "marca":"Lenovo",
     "categoria":"notebook",
     "stock":821,   
@@ -314,17 +314,17 @@ const productos = [
     "modelo":"82LN00W1AR"
 },
 "descripcion":{
-    "diseño":"La notebook Lenovo IPG3-82EY00PR cuenta con un diseño compacto y funcional. Sus prácticas medidas de: 35,9 cm de ancho x 24,9 cm de profundidad x 2,4 cm de alto y su liviano peso de tan sólo 2,2 Kg permiten que puedas llevarla con vos a donde vayas. Notebook Gamer Lenovo",
-    "desempeño":"Su procesador AMD Ryzen 5 4600H y su memoria de 8GB se complementan para ofrecer un mayor rendimiento con un bajo consumo de energía. Además, su disco SSD 512GB le da una gran capacidad de almacenamiento de datos y te permite guardar una mayor cantidad de contenido multimedia.",
+    "disenio":"La notebook Lenovo IPG3-82EY00PR cuenta con un diseño compacto y funcional. Sus prácticas medidas de: 35,9 cm de ancho x 24,9 cm de profundidad x 2,4 cm de alto y su liviano peso de tan sólo 2,2 Kg permiten que puedas llevarla con vos a donde vayas. Notebook Gamer Lenovo",
+    "desempenio":"Su procesador AMD Ryzen 5 4600H y su memoria de 8GB se complementan para ofrecer un mayor rendimiento con un bajo consumo de energía. Además, su disco SSD 512GB le da una gran capacidad de almacenamiento de datos y te permite guardar una mayor cantidad de contenido multimedia.",
     "conectividad":"La notebook cuenta con puertos USB, HDMI, lector de tarjetas y conector 3,5mm. Además, con su conexión inalámbrica mediante Bluetooth 5.0, lograrás vincularte a cualquier dispositivo sin cables de por medio.",
     "bateria":"Con la lenobvo IPG3 podrás mantener tu productividad al máximo gracias a su batería de 70Wh.",
 }
 },
 {
     "id":6,
-    "title":"Notebook Gamer HP 16,1' Core i5 8GB 512GB SSD Victus 16-D0516LA",
-    "price":209999,
-    "picture_url":[hp_16D0516LA_1,hp_16D0516LA_2,hp_16D0516LA_3,hp_16D0516LA_4],
+    "titulo":"Notebook Gamer HP 16,1' Core i5 8GB 512GB SSD Victus 16-D0516LA",
+    "precio":209999,
+    "url_imagenes":[hp_16D0516LA_1,hp_16D0516LA_2,hp_16D0516LA_3,hp_16D0516LA_4],
     "marca":"Hp",
     "categoria":"notebook",
     "stock":6,
@@ -370,17 +370,17 @@ const productos = [
         "modelo":"16-D0516LA"
     },
     "descripcion":{
-        "diseño":"La notebook HP Victus 16-D0516LA ofrece un diseño moderno en color azul intenso y un teclado completo retroiluminado. Su formato pequeño y ligero te permitirá llevarla con vos para seguir jugando o stremeando donde sea gracias a su cámara HD de 720p con micrófonos digitales integrados. Además, con el sistema de refrigeración lograrás evitar el sobrecalentamiento de tu notebook.",
-        "desempeño":"Con gráficos NVIDIA GeForce GTX y el procesador Intel Core i5 estarás listo para todo. Junto con su memoria RAM de 8 GB y su SSD de 512 GB, obtendrás un gran rendimiento, eficiencia y velocidad para una experiencia de uso mucho más rápida. Desde OMEN Gaming Hub, tu centro para mejorar la jugabilidad, podrás controlar cualquier ajuste de rendimiento, las opciones de iluminación y más.",
+        "disenio":"La notebook HP Victus 16-D0516LA ofrece un diseño moderno en color azul intenso y un teclado completo retroiluminado. Su formato pequeño y ligero te permitirá llevarla con vos para seguir jugando o stremeando donde sea gracias a su cámara HD de 720p con micrófonos digitales integrados. Además, con el sistema de refrigeración lograrás evitar el sobrecalentamiento de tu notebook.",
+        "desempenio":"Con gráficos NVIDIA GeForce GTX y el procesador Intel Core i5 estarás listo para todo. Junto con su memoria RAM de 8 GB y su SSD de 512 GB, obtendrás un gran rendimiento, eficiencia y velocidad para una experiencia de uso mucho más rápida. Desde OMEN Gaming Hub, tu centro para mejorar la jugabilidad, podrás controlar cualquier ajuste de rendimiento, las opciones de iluminación y más.",
         "conectividad":"Lograrás disfrutar de una velocidad ultrarrápida de datos gigabit con el combo Wi-Fi 6 (1x2) y Bluetooth 5.2. También posee puertos USB, 1 HDMI, 1 RJ-45, 1 pin inteligente CA, 1 combo de auriculares y micrófono y 1 lector de tarjetas SD multiformato.",
         "bateria":"Su batería de 70 Wh te permitirá jugar y entretenerte sin pausas. Además, cuando la HP Victus esté con poca carga, podrás aumentar su batería de 0 al 50% en aproximadamente 30 minutos, mientras el dispositivo esté apagado.",
     }
 },
 {
     "id":7,
-    "title":"Notebook HP Pavilion 15,6' AMD Ryzen 7 8GB 512GB SSD 15-EH0009LA",
-    "price":239999,
-    "picture_url":[hp_15EH0009LA_1,hp_15EH0009LA_2,hp_15EH0009LA_3,hp_15EH0009LA_4],
+    "titulo":"Notebook HP Pavilion 15,6' AMD Ryzen 7 8GB 512GB SSD 15-EH0009LA",
+    "precio":239999,
+    "url_imagenes":[hp_15EH0009LA_1,hp_15EH0009LA_2,hp_15EH0009LA_3,hp_15EH0009LA_4],
     "marca":"Hp",
     "categoria":"notebook",
     "stock":27,
@@ -425,17 +425,17 @@ const productos = [
         "modelo":"15-EH0009LA"
     },
     "descripcion":{
-        "diseño":"La notebook HP Pavilion 15-EH0009LA es la fusión perfecta entre el máximo desempeño y el mejor diseño para tus días más productivos. Con una pantalla de 15,6 pulgadas con micro bordes y resolución FHD (1920 x 1080 p) tendrás mayor visualización, con amplios ángulos de visión de 178°, y una excelente calidad para disfrutar de todo tu contenido. Además, cuenta con lector de huellas digitales para que puedas iniciar sesión en tu dispositivo solo con el toque de tu dedo.",
-        "desempeño":"La HP Pavilion posee un rendimiento impresionante. Su procesador AMD Ryzen 7 y la tarjeta gráfica Vega te permitirán resolver las tareas multimedia más exigentes. Además, su sistema operativo Windows 10 te ayudará a ser más productivo, brindándote un entorno personalizado y mejorado. Cuenta con memoria RAM de 8GB DDR4 y SSD de 512GB, para que puedas arrancar en segundos y almacenar todas tus fotos y videos.",
+        "disenio":"La notebook HP Pavilion 15-EH0009LA es la fusión perfecta entre el máximo desempeño y el mejor diseño para tus días más productivos. Con una pantalla de 15,6 pulgadas con micro bordes y resolución FHD (1920 x 1080 p) tendrás mayor visualización, con amplios ángulos de visión de 178°, y una excelente calidad para disfrutar de todo tu contenido. Además, cuenta con lector de huellas digitales para que puedas iniciar sesión en tu dispositivo solo con el toque de tu dedo.",
+        "desempenio":"La HP Pavilion posee un rendimiento impresionante. Su procesador AMD Ryzen 7 y la tarjeta gráfica Vega te permitirán resolver las tareas multimedia más exigentes. Además, su sistema operativo Windows 10 te ayudará a ser más productivo, brindándote un entorno personalizado y mejorado. Cuenta con memoria RAM de 8GB DDR4 y SSD de 512GB, para que puedas arrancar en segundos y almacenar todas tus fotos y videos.",
         "conectividad":"Podrás conectarte de manera inalámbrica a cualquier dispositivo gracias a su tecnología Wi-Fi y Bluetooth. También, cuenta con puertos USB, HDMI, disco sólido, lector de tarjetas SD multiformato y un conector combinado para auricular/micrófono. Por último, posee una cámara web HP HD Wide Vision de 720p",
         "bateria":"Su batería de iones de litio de 3 celdas y 41 Wh te dará la energía necesaria para que puedas utilizar la notebook por horas. Además, admite carga rápida, para que llegues de 0 a 50% de batería en solo 45 minutos* aproximadamente. \n* Recarga la batería hasta un 50 % en 45 minutos cuando el sistema se encuentra apagado. El tiempo de carga puede variar +/-10 % según la tolerancia del sistema",
     }
 },
 {
     "id":8,
-    "title":"Notebook HP Pavilion 15,6' AMD Ryzen 5 8GB 256GB SSD 15-EH0007LA",
-    "price":144999,
-    "picture_url":[hp_15EH0007LA_1,hp_15EH0007LA_2,hp_15EH0007LA_3,hp_15EH0007LA_4],
+    "titulo":"Notebook HP Pavilion 15,6' AMD Ryzen 5 8GB 256GB SSD 15-EH0007LA",
+    "precio":144999,
+    "url_imagenes":[hp_15EH0007LA_1,hp_15EH0007LA_2,hp_15EH0007LA_3,hp_15EH0007LA_4],
     "marca":"Hp",
     "categoria":"notebook",
     "stock":92,
@@ -479,17 +479,17 @@ const productos = [
         "modelo":"15-EH0007LA"
     },
     "descripcion":{
-        "diseño":"La notebook HP Pavilion 15-EH0007LA posee una pantalla de 15,6 pulgadas con resolución HD (1366x768) capaz de brindar una claridad de color precisa para una fidelidad completa en todos tu contenido favorito.",
-        "desempeño":"Su procesador AMD Ryzen 5, junto con su memoria RAM de 8GB y su disco de 256GB SSD, logran ofrecer el almacenamiento que necesitás y un rendimiento de juego optimizado y veloz, para que nada te detenga. ",
+        "disenio":"La notebook HP Pavilion 15-EH0007LA posee una pantalla de 15,6 pulgadas con resolución HD (1366x768) capaz de brindar una claridad de color precisa para una fidelidad completa en todos tu contenido favorito.",
+        "desempenio":"Su procesador AMD Ryzen 5, junto con su memoria RAM de 8GB y su disco de 256GB SSD, logran ofrecer el almacenamiento que necesitás y un rendimiento de juego optimizado y veloz, para que nada te detenga. ",
         "conectividad":"La Pavilion 15-EH0007LA cuenta con puertos USB, HDMI y conexión inalámbrica mediante Wi-Fi y Bluetooth. Así, estarás preparado para conectar o conectarte con cualquier dispositivo.",
         "bateria":"Con la HP Pavilon podrás mantener tu productividad al máximo gracias a su batería de 41Wh.",
     }
 },
 {
     "id":9,
-    "title":"Notebook Asus 15,6” Intel Core i3 4GB 256GB SSD 91X515EA-EJ1342T",
-    "price":104999,
-    "picture_url":[asus_91X515EAEJ1342T_1,asus_91X515EAEJ1342T_2,asus_91X515EAEJ1342T_3,asus_91X515EAEJ1342T_4],
+    "titulo":"Notebook Asus 15,6” Intel Core i3 4GB 256GB SSD 91X515EA-EJ1342T",
+    "precio":104999,
+    "url_imagenes":[asus_91X515EAEJ1342T_1,asus_91X515EAEJ1342T_2,asus_91X515EAEJ1342T_3,asus_91X515EAEJ1342T_4],
     "marca":"Asus",
     "categoria":"notebook",
     "stock":89,
@@ -534,17 +534,17 @@ const productos = [
         "modelo":"X515EA-EJ1342T"
     },
     "descripcion":{
-        "diseño":"La notebook Asus se diseñó poniendo especial atención en los detalles, dándole un estilo moderno con una estructura ligera para que puedas llevarla fácilmente con vos a donde sea. \n Su pantalla de 15,6 pulgadas y resolución FHD (1920x1080) junto con sus 2 altavoces estéreos con Dolby Audio, te proporcionará una gran calidad de imágen y sonido para que disfrutes de todas tus series y películas favoritas, y trabajes o estudies con comodidad.",
-        "desempeño":"Su procesador Intel® Core™ i3-1115G4, su memoria de 4GB y su SSD de 256GB, se complementan para ofrecer un increíble rendimiento, eficiencia, velocidad y una gran capacidad de almacenamiento de datos.",
+        "disenio":"La notebook Asus se diseñó poniendo especial atención en los detalles, dándole un estilo moderno con una estructura ligera para que puedas llevarla fácilmente con vos a donde sea. \n Su pantalla de 15,6 pulgadas y resolución FHD (1920x1080) junto con sus 2 altavoces estéreos con Dolby Audio, te proporcionará una gran calidad de imágen y sonido para que disfrutes de todas tus series y películas favoritas, y trabajes o estudies con comodidad.",
+        "desempenio":"Su procesador Intel® Core™ i3-1115G4, su memoria de 4GB y su SSD de 256GB, se complementan para ofrecer un increíble rendimiento, eficiencia, velocidad y una gran capacidad de almacenamiento de datos.",
         "conectividad":"La notebook cuenta con puertos USB, HDMI, lector de tarjetas y conector 3,5mm. Además, con su conexión inalámbrica mediante Bluetooth 5.0, lograrás vincularte a cualquier dispositivo sin cables de por medio.",
         "bateria":"Con la Asus podrás mantener tu productividad al máximo gracias a su batería de 37Wh.",
     }
 },
 {
     "id":10,
-    "title":"Notebook Gamer Banghó GM-15Z11 Core i5 16GB SSD 1TB GTX1650 15.6'",
-    "price":279999,
-    "picture_url":[Bangho_GM15Z11_1,Bangho_GM15Z11_2,Bangho_GM15Z11_3,Bangho_GM15Z11_4],
+    "titulo":"Notebook Gamer Banghó GM-15Z11 Core i5 16GB SSD 1TB GTX1650 15.6'",
+    "precio":279999,
+    "url_imagenes":[Bangho_GM15Z11_1,Bangho_GM15Z11_2,Bangho_GM15Z11_3,Bangho_GM15Z11_4],
     "marca":"Bangho",
     "categoria":"notebook",
     "stock":123,
@@ -589,8 +589,8 @@ const productos = [
         "modelo":"82LN00W1AR"
     },
     "descripcion":{
-        "diseño":"Notebook Banghó Game Master GM-15Z11 GTX 1650, fue creada para aportar mayor velocidad en el juego y portabilidad. Equipada con Procesador Intel Core i5 de 11ava generación de serie H, placa gráfica NVIDIA Geforce GTX 1650 de 4GB GDDR6 y pantalla Full HD 15,6'.",
-        "desempeño":"Su procesador Intel Core 5, su memoria de 16GB y su SSD de 1TB, se complementan para ofrecer un increíble rendimiento, eficiencia, velocidad y una gran capacidad de almacenamiento de datos.",
+        "disenio":"Notebook Banghó Game Master GM-15Z11 GTX 1650, fue creada para aportar mayor velocidad en el juego y portabilidad. Equipada con Procesador Intel Core i5 de 11ava generación de serie H, placa gráfica NVIDIA Geforce GTX 1650 de 4GB GDDR6 y pantalla Full HD 15,6'.",
+        "desempenio":"Su procesador Intel Core 5, su memoria de 16GB y su SSD de 1TB, se complementan para ofrecer un increíble rendimiento, eficiencia, velocidad y una gran capacidad de almacenamiento de datos.",
         "conectividad":"La notebook cuenta con puertos USB, HDMI, lector de tarjetas y conector 3,5mm. Además, con su conexión inalámbrica mediante Bluetooth 5.0, lograrás vincularte a cualquier dispositivo sin cables de por medio.",
         "bateria":"Con la Bangho podrás mantener tu productividad al máximo gracias a su batería de 70Wh.",
     }

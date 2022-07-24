@@ -9,7 +9,7 @@ function ImgContainer({pictures}) {
     useEffect(()=>{
         setImagenes(pictures);
     },[])
-
+    
     useEffect(()=>{
         setRuta(imagenes[0]);
     },[imagenes])
@@ -24,9 +24,7 @@ function ImgContainer({pictures}) {
         <img src={ruta} style={{width:400}}/>
             
         <article className='selectorImgs'>
-            {/* {imagenes.map((el,index)=> <img key={index} src={el} onClick={(e)=> estad(e)} style={{width:100}}/>)} */}
             {imagenes.map((el,index)=> <Img key={index} rutaReceived={el} rutaMostrada={ruta} cambiar={estad}/>)}
-            {/* <Img/> */}
         </article>
     </section>
   )

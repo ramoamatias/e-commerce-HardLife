@@ -1,4 +1,4 @@
-import {useContext, useState} from "react"
+import {useContext, useEffect, useState} from "react"
 
 import './ItemDetail.css'
 
@@ -11,26 +11,23 @@ import {CarritoContext} from '../../CartContext/CartContext'
 import { Link } from "react-router-dom";
 
 
-function ItemDetail({ detalle }) {
+function ItemDetail({ detalle , imgUrl}) {
     const [cantidadProductos,carrito,clear,removeProducto,addProducto] = useContext(CarritoContext);
     const [cantidadAgregada, setCantidadAgregada] = useState();
 
-    const {id, title,picture_url, price,marca,stock,procesador,memoria,sistema_operativo,imagen,conectividad,detalles,dimensiones,bateria,modelo,descripcion} = detalle;
-
+    const {id, titulo,url_imagenes,precio,marca,stock,procesador,memoria,sistema_operativo,imagen,conectividad,detalles,dimensiones,bateria,modelo,descripcion} = detalle;
     const agregarACarrito = (cantidad) => {
         addProducto(detalle,cantidad);
         setCantidadAgregada(cantidad);
     }
 
-
-
-    return (
+        return (
       <div className='itemDetail'>
           <div className='contenedorDetalle'>
-              <ImgContainer pictures={picture_url}/>
+              <ImgContainer pictures={url_imagenes}/>
               <article className='contenedorCompra'>
-                  <h1>{title}</h1> 
-                  <p>${Intl.NumberFormat('de-DE').format(price)}</p>
+                  <h1>{titulo}</h1> 
+                  <p>${Intl.NumberFormat('de-DE').format(precio)}</p>
                   {cantidadAgregada 
                      ? <div className="contenedorCompraRealizada">
                         <Link to='/carrito'><button className="btnCompra">Terminar compra</button></Link>
@@ -42,30 +39,30 @@ function ItemDetail({ detalle }) {
           </div>
           <section className='bodyDetalle'>
                   <h3 className='bodyMarca'>{marca}</h3>
-                  <p className='bodyTitle'>{title}</p>
+                  <p className='bodyTitle'>{titulo}</p>
                   <p>Producto: <span className='bodyId'>{id}</span></p>
                   <article className='bodyDescripcion'>
                       <h3>Descripción</h3>
                       <div>
-                          <Descripcion key='disenioDescr' title='Diseño' descripcion={descripcion.diseño}/>
-                          <Descripcion key='desempenioDescr'  title='Desempeño' descripcion={descripcion.desempeño}/>
-                          <Descripcion key='conectividadDescr'title='Conectividad' descripcion={descripcion.conectividad}/>
-                          <Descripcion key='beteriaDescr' title='Batería' descripcion={descripcion.bateria}/> 
+                          <Descripcion key='disenioDescr' titulo='Diseño' descripcion={descripcion.diseño}/>
+                          <Descripcion key='desempenioDescr'  titulo='Desempeño' descripcion={descripcion.desempeño}/>
+                          <Descripcion key='conectividadDescr'titulo='Conectividad' descripcion={descripcion.conectividad}/>
+                          <Descripcion key='beteriaDescr' titulo='Batería' descripcion={descripcion.bateria}/> 
                       </div>
   
                   </article>
                   <article className='containerCaracteristicas'>
                       <h2>Caracteristicas Técnicas</h2>
                       <ul>
-                          <Propiedades key='procesador' title='Procesador' prop={procesador}/>
-                          <Propiedades key='memoria' title='Memoria' prop={memoria}/>
-                          <Propiedades key='sistemaOperativo' title='Sistema Operativo' prop={sistema_operativo}/>
-                          <Propiedades key='imagen' title='Imagen' prop={imagen}/>
-                          <Propiedades key='conectividad' title='Conectividad' prop={conectividad}/>
-                          <Propiedades key='detalles' title='Detalles' prop={detalles}/>
-                          <Propiedades key='dimensiones' title='Dimensiones' prop={dimensiones}/>
-                          <Propiedades key='bateria' title='Batería' prop={bateria}/>
-                          <Propiedades key='modelo' title='Modelo' prop={modelo}/>
+                          <Propiedades key='procesador' titulo='Procesador' prop={procesador}/>
+                          <Propiedades key='memoria' titulo='Memoria' prop={memoria}/>
+                          <Propiedades key='sistemaOperativo' titulo='Sistema Operativo' prop={sistema_operativo}/>
+                          <Propiedades key='imagen' titulo='Imagen' prop={imagen}/>
+                          <Propiedades key='conectividad' titulo='Conectividad' prop={conectividad}/>
+                          <Propiedades key='detalles' titulo='Detalles' prop={detalles}/>
+                          <Propiedades key='dimensiones' titulo='Dimensiones' prop={dimensiones}/>
+                          <Propiedades key='bateria' titulo='Batería' prop={bateria}/>
+                          <Propiedades key='modelo' titulo='Modelo' prop={modelo}/>
                       </ul>
                   </article>
   

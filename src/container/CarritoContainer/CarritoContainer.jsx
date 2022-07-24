@@ -12,7 +12,7 @@ const CarritoContainer = () => {
   useEffect(()=>{
     let totalCarrito = 0;
     carrito.map(
-      el => totalCarrito += el.item.price * el.cantidad
+      el => totalCarrito += el.item.precio * el.cantidad
     );
 
     setTotal(Intl.NumberFormat('de-DE').format(totalCarrito))},[cantidadProductos]);

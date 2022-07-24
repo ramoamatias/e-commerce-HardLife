@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react'
 import './Propiedades.css'
 
-function Propiedades({title,prop}) {
+function Propiedades({titulo,prop}) {
     const [ocultar,setOcultar] = useState(true);
     const [propiedades,setPropiedades] = useState([]);
 
@@ -33,7 +33,7 @@ function Propiedades({title,prop}) {
 
   return (
     <li onClick={ocultarMostrar} className="containerPropiedad">
-            <h3 className={ocultar ? 'producto' : 'productoActivo'}>{title}</h3>
+            <h3 className={ocultar ? 'producto' : 'productoActivo'}>{titulo}</h3>
          <div className={ocultar ? 'novisible' : 'visible'} >
             <div>
                 {propiedades.map((el,index)=> 
