@@ -74,42 +74,15 @@ esto es para que no haya conflicto y se oculte cuando tenga una resolucion mayor
 }
 
 .containerPropiedad{
-    width: 100%;
+    width: 80vw;
     margin: 10px auto;
     list-style: none;
     text-align: center;
     padding: 10px 0;
     border-top: 1px solid blueviolet;
 }
-@media screen and (min-width:700px) {
-    .productoActivo::before {
-        display: none;
-    }
-    .productoActivo::after {
-        display: none;
-    }
-
-    .producto::before {
-        display: none;
-    }
-    .producto::after {
-        display: none;
-    }
 
 
-    .visible {
-        display: inline-block;
-    }
-
-    .novisible {
-        display: inline-block;
-    }
-    
-}
-
-.containerPropiedad {
-    width: 100%;
-}
 .containerPropiedad div {
     width: 100%;
 }
@@ -117,7 +90,59 @@ esto es para que no haya conflicto y se oculte cuando tenga una resolucion mayor
 .propiedad {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    /* text-align: ; */
-
+    justify-content: space-between;
 }
+
+.propiedad span {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+    text-align: le;
+}
+
+.containerPropiedad h3 {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.impar {
+    background-color:rgba(211, 208, 208, 0.182);
+}
+
+.propiedadTextLeft {
+    text-align: left;
+}
+
+.propiedadTextRight {
+    text-align: right;
+}
+    
+    @media screen and (min-width:700px) {
+        .productoActivo::before {
+            display: none;
+        }
+        .productoActivo::after {
+            display: none;
+        }
+    
+        .producto::before {
+            display: none;
+        }
+        .producto::after {
+            display: none;
+        }
+    
+    
+        .visible {
+            display: inline-block;
+        }
+    
+        .novisible {
+            display: inline-block;
+        }
+    
+        .containerPropiedad h3 {
+            text-align: center;
+        }
+        
+    }

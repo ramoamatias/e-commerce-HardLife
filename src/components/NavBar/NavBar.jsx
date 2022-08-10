@@ -4,6 +4,7 @@ import './NavBar.css';
 import Brand from '../Brand/Brand';
 import CartWidget from '../CartWidget/CartWidget';
 import Categoria from '../Categoria/Categoria';
+import BotonLogin from '../BotonLogin/BotonLogin';
 
 function NavBar({children}) {
   return (
@@ -16,21 +17,19 @@ function NavBar({children}) {
             <Categoria nombre = "Notebooks"/>
           </Link>
 
-          <Link to="/categoria/monitor" >
-            <Categoria nombre = "Monitores"/>
-          </Link>
-
           <Link to="/categoria/celular" >
             <Categoria nombre = "Celulares"/>
           </Link>
-          
-          <Link to="/categoria/tablet" >
-            <Categoria nombre = "Tablets"/>
+    
+        </article>
+        <article className='sesion'>
+          <Link to="carrito">
+            <CartWidget/>
+          </Link>
+          <Link to="login">
+            <BotonLogin/>
           </Link>
         </article>
-        <Link to="carrito">
-          <CartWidget/>
-        </Link>
         
     </nav>
   )

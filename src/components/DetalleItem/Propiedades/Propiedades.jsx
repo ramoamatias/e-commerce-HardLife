@@ -37,9 +37,9 @@ function Propiedades({titulo,prop}) {
          <div className={ocultar ? 'novisible' : 'visible'} >
             <div>
                 {propiedades.map((el,index)=> 
-                    <div key={index} className='propiedad' >
-                        <span>{el.nombreAMostrar}</span>  
-                        <span>{prop[el.nombreProp]}</span>  
+                    <div key={index} className={[`propiedad ${index % 2 === 0 ? "impar": "par"}`]} >
+                        <span className='propiedadTextLeft'>{el.nombreAMostrar}</span>  
+                        <span className='propiedadTextRight'>{prop[el.nombreProp]}</span>  
                     </div>
                 )}
             </div>

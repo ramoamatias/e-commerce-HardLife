@@ -14,7 +14,7 @@ function Item(props) {
       <img src={props.urlImagenes} alt="" className="card-img"/>
       <article className='card-body'>
           <p className="card-title">{props.titulo}</p>
-          <span className="card-price">${props.precio}</span>
+          <span className="card-price">${Intl.NumberFormat('de-DE').format(props.precio)}</span>
           <Link to={`/detalle/${props.id}`} >
             <button className="card-btn">Ver Más</button>
           </Link>

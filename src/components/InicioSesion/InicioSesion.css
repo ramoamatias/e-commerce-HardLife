@@ -1,0 +1,146 @@
+#inicioSesion{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(225, 213, 213);
+    box-shadow: 1px 1px 5px rgb(179 176 176);
+    position: relative;
+}
+
+.tituloInicioSesion {
+    position: absolute;
+    top: 40px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    position: relative;
+    margin: 15px;
+   }
+   
+   .input {
+    border: solid 1.5px blueviolet;
+    border-radius: 10px;
+    background: none;
+    padding: 10px 5px;
+    font-size: 1rem;
+    color: blueviolet;
+    transition: border 150ms cubic-bezier(1,-0.29, 0.29, 1.19) /*cubic-bezier(0.4,0,0.2,1)*/;
+   }
+   
+   .user-label {
+    position: absolute;
+    text-align: start;
+    left: 30px;
+    top: -7px;
+    color: rgb(225, 213, 213);
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+   }
+   
+    .input:focus {
+    outline: none;
+    outline: 2px solid blueviolet;
+   }
+ 
+   
+   .input:focus ~ label, .input:valid ~ label {
+    transform: translate(-30px,-10px) scale(0.8);
+    background-color: white;
+    padding: 2px 5px;
+    color: blueviolet;
+   }
+
+.btn{    
+    background-color: blueviolet;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid blueviolet;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: white;
+    color: blueviolet;
+    border: 2px solid blueviolet;
+}
+
+.error {
+    border: solid 1.5px red;
+}
+
+
+
+.error:focus{ 
+    outline: none;
+    outline: 2px solid red; 
+}
+
+
+.linkRegistroUsuario,
+.recuperarContra{
+    margin: 10px 30px;
+    text-decoration: none;
+    color: rgba(56, 56, 56, 0.5);
+    font-size: 15px;
+    font-weight: 500;
+
+}
+
+.linkRegistroUsuario:hover,
+.recuperarContra:hover{
+    color: blueviolet;
+}
+
+.errorInicioSesion {
+    color: red;
+    font-weight:bold;
+}
+
+.opcionesInicioSesion{
+    display: flex;
+}
+
+.containerOpcionesUsuario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.seccionUsuario{
+    display: block;
+    width: 100%;
+    padding: 30px;
+    border: 2px solid blueviolet;
+    margin: 20px;
+    color: black;
+    text-decoration: none;
+    border: 1px solid rgb(225, 213, 213);
+    box-shadow: 1px 1px 5px rgb(179 176 176);
+}
+
+.seccionUsuario:hover{
+    box-shadow: 1px 1px 15px rgb(124 120 120);
+}
+.seccionUsuario h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+
+@media screen and (max-width:750px) {
+
+    #inicioSesion {
+        width: auto;
+        text-align: center;
+    }
+    
+}

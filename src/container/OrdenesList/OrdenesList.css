@@ -1,0 +1,9 @@
+.ordenesListContainer{
+    padding: 10px 15%;
+}
+
+.ordenesListTitulo {
+    border-bottom: 2px solid rgb(179 176 176);
+    padding: 20px 0;
+    margin-bottom: 40px;
+}

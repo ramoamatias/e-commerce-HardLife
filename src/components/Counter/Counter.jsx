@@ -3,10 +3,10 @@ import "./Counter.css"
 
 
 const Counter = ({ stock, onAdd }) => {
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(1);
 
   const aumentarCounter = () => counter < stock ? setCounter(counter + 1) : setCounter(stock);
-  const disminuirCounter = () => counter > 0 ? setCounter(counter - 1) : setCounter(0);
+  const disminuirCounter = () => counter > 1 ? setCounter(counter - 1) : setCounter(1);
 //  console.log(cantidadProductos,carrito);
   return (
     <article className="counterContainer">

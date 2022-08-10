@@ -6,8 +6,8 @@ const ItemCarrito = ({producto,cantidad,remove}) => {
     <div className="itemCarritoContainer">
         <img src={producto.url_imagenes[0]} alt={`img_${producto.id}`} className='carritoImgProducto' />
         <p className="itemCarritoTitle">{producto.titulo}</p>
-        <p>${Intl.NumberFormat('de-DE').format(producto.precio)}</p>
-        <p>cantidad: {cantidad}</p>
+        <p><span>Precio Unitario</span>${Intl.NumberFormat('de-DE').format(producto.precio)}</p>
+        <p><span>Cantidad</span> {cantidad}</p>
         <img src={cesto} className="cesto" onClick={()=>{remove(producto.id)}}/>
     </div>
   )

@@ -1,0 +1,39 @@
+.compraItemContainer {
+    display: block;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1px solid rgb(225, 213, 213);
+    box-shadow: 1px 1px 5px rgb(179 176 176);
+    text-decoration: none;
+    color: black;
+}
+
+.compraItemContainer:hover{
+    box-shadow: 1px 1px 15px rgb(124 120 120);   
+}
+
+.compraItemTitulo {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.compraItemFecha {
+    margin: 20px 0;
+}
+.compraItemBody {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:500px) {
+    .compraItemContainer {
+        font-size: calc(10px + 1vw) ;
+    }
+    .compraItemTitulo {
+        font-size: calc(10px + 1vw) ;
+    }
+    .compraItemBody {
+        flex-direction: column;
+    }
+}

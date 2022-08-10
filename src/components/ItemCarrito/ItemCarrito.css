@@ -6,6 +6,18 @@
     align-items: center;
 }
 
+.itemCarritoContainer p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ } 
+
+.itemCarritoContainer p span {
+    margin: 10px;
+    font-weight: bold;
+}
 .carritoImgProducto {
     width: 150px;
 }
@@ -18,4 +30,19 @@
 
 .cesto{
     cursor: pointer;
+}
+
+
+@media screen and (max-width:550px) {
+    .itemCarritoContainer {
+        flex-direction: column;
+    }
+    
+    .itemCarritoContainer p {
+        margin: 10px 0;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        font-size: calc(10px + 1vw);
+    }
 }

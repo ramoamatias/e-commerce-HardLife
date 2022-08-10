@@ -44,7 +44,7 @@
     background-color: blueviolet;
     color: white;
     border-radius: 5px;
-    border: none;
+    border: 2px solid blueviolet;
     font-weight: bold;
     padding: 10px 25px;
     font-size: 1.3rem;
@@ -107,4 +107,38 @@
     color: rgb(112 112 112);
     border-bottom: 1px solid rgb(179 176 176 / 37%);
     
+}
+
+@media screen and (max-width:800px) {
+    .contenedorDetalle {
+        flex-direction: column;
+    }
+
+    .contenedorCompra {
+        margin: 20px auto;
+        width: auto;
+    }
+
+    .contenedorCompra h1 {
+        margin: 20px auto;
+    }
+    
+    .contenedorCompra p {
+        margin:10px auto;
+    }
+
+    .contenedorCompraRealizada {
+        height: auto;
+        width: 100%;
+    }
+
+    .contenedorCompraRealizada a {
+        display: inline-block;
+        width: 100%;
+    }
+    .btnCompra {
+        font-size: calc(10px + 1vw);
+        width: 100%;
+        margin: 5px auto;
+    }
 }

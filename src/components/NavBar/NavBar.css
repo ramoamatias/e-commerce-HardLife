@@ -11,6 +11,7 @@
     padding: 6px;
     position: sticky;
     top: 0;
+    z-index: 1000000;
 }
 
 .navbar a {
@@ -22,6 +23,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.sesion {
+    display: flex;
+    align-items: center;
+
 }
 
 @media screen and (max-width:850px) {

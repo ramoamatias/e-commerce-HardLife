@@ -9,13 +9,15 @@ import Counter from '../../Counter/Counter';
 
 import {CarritoContext} from '../../CartContext/CartContext'
 import { Link } from "react-router-dom";
+import Notebook from "../../Notebook/Notebook";
+import Celular from "../../Celular/Celular";
 
 
-function ItemDetail({ detalle , imgUrl}) {
+function ItemDetail({ detalle }) {
     const [cantidadProductos,carrito,clear,removeProducto,addProducto] = useContext(CarritoContext);
     const [cantidadAgregada, setCantidadAgregada] = useState();
 
-    const {id, titulo,url_imagenes,precio,marca,stock,procesador,memoria,sistema_operativo,imagen,conectividad,detalles,dimensiones,bateria,modelo,descripcion} = detalle;
+    const {id, titulo,url_imagenes,precio,marca,categoria,stock,procesador,memoria,sistema_operativo,imagen,conectividad,detalles,dimensiones,bateria,modelo,descripcion} = detalle;
     const agregarACarrito = (cantidad) => {
         addProducto(detalle,cantidad);
         setCantidadAgregada(cantidad);
@@ -37,36 +39,13 @@ function ItemDetail({ detalle , imgUrl}) {
                      <p className="stockDisponible">{stock} Disponibles </p>
               </article>
           </div>
-          <section className='bodyDetalle'>
-                  <h3 className='bodyMarca'>{marca}</h3>
-                  <p className='bodyTitle'>{titulo}</p>
-                  <p>Producto: <span className='bodyId'>{id}</span></p>
-                  <article className='bodyDescripcion'>
-                      <h3>Descripción</h3>
-                      <div>
-                          <Descripcion key='disenioDescr' titulo='Diseño' descripcion={descripcion.diseño}/>
-                          <Descripcion key='desempenioDescr'  titulo='Desempeño' descripcion={descripcion.desempeño}/>
-                          <Descripcion key='conectividadDescr'titulo='Conectividad' descripcion={descripcion.conectividad}/>
-                          <Descripcion key='beteriaDescr' titulo='Batería' descripcion={descripcion.bateria}/> 
-                      </div>
-  
-                  </article>
-                  <article className='containerCaracteristicas'>
-                      <h2>Caracteristicas Técnicas</h2>
-                      <ul>
-                          <Propiedades key='procesador' titulo='Procesador' prop={procesador}/>
-                          <Propiedades key='memoria' titulo='Memoria' prop={memoria}/>
-                          <Propiedades key='sistemaOperativo' titulo='Sistema Operativo' prop={sistema_operativo}/>
-                          <Propiedades key='imagen' titulo='Imagen' prop={imagen}/>
-                          <Propiedades key='conectividad' titulo='Conectividad' prop={conectividad}/>
-                          <Propiedades key='detalles' titulo='Detalles' prop={detalles}/>
-                          <Propiedades key='dimensiones' titulo='Dimensiones' prop={dimensiones}/>
-                          <Propiedades key='bateria' titulo='Batería' prop={bateria}/>
-                          <Propiedades key='modelo' titulo='Modelo' prop={modelo}/>
-                      </ul>
-                  </article>
-  
-              </section>
+           {
+            categoria === "notebook" 
+                ? <Notebook datos={detalle}/> 
+                : categoria === "celular"
+                    ? <Celular datos={detalle}/>
+                    : null 
+           }         
       </div>
     )
   }

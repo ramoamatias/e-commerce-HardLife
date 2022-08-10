@@ -1,10 +1,11 @@
-import {useState, useEffect} from 'react'
-import Loader from '../../components/Loader/Loader';
-import ItemDetail from '../../components/DetalleItem/ItemDetail/ItemDetail';
+import React from 'react';
+import {useState, useEffect} from 'react';
 import { useParams } from 'react-router';
 import { doc, getDoc, getFirestore } from 'firebase/firestore';
+import CompraDetalle from '../../components/CompraDetalle/CompraDetalle';
+import Loader from '../../components/Loader/Loader';
 
-function ItemListContainer({ greeting }) {
+const CompraDetailContainer = () => {
   const [detalle, setDetalle] = useState({});
   const [loading, setloading] = useState(true);
 
@@ -12,7 +13,7 @@ function ItemListContainer({ greeting }) {
 
   useEffect(()=>{
      const db = getFirestore();
-     const queryProductos= doc(db,'productos',id);
+     const queryProductos= doc(db,'ordenes',id);
      
      getDoc(queryProductos)
        .then(res => {setDetalle({id:res.id, ...res.data()})})
@@ -23,10 +24,10 @@ function ItemListContainer({ greeting }) {
 
   return (
     <>
-      {loading ? <Loader/> : <ItemDetail detalle={detalle} imgUrl={detalle.url_imagenes}/> }
+      {loading ? <Loader/> : <CompraDetalle detalle={detalle}/>}
+
     </>
   )
 }
 
-
-export default ItemListContainer
+export default CompraDetailContainer

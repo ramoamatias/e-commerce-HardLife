@@ -1,0 +1,21 @@
+.btnLogin {
+    padding: 2px 10px;
+    border: 2px solid white;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.btnLogin:hover {
+    color: blueviolet;
+    background-color: white;
+    
+}
+
+.login {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    background-image: url(../../img/iconoUser_0.svg);
+    background-size: cover;
+}

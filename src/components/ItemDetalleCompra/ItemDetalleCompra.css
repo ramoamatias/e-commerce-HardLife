@@ -1,0 +1,52 @@
+.itemDetalleCompraContainer {
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(225, 213, 213);
+    border-top: 1px solid rgb(225, 213, 213);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -1px;
+
+}
+
+.itemDetalleCompraContainer img {
+    width: 150px;
+}
+
+.itemDetalleCompraContainer p {
+    max-width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    
+
+}
+.itemDetalleCompraContainer p span {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.itemDetalleCompraTitulo {
+    text-align: center;
+    max-width: 200px;
+    font-weight: bold;
+}
+
+@media screen and (max-width:650px) {
+    .itemDetalleCompraContainer {
+        flex-direction: column;
+    }
+    
+    .itemDetalleCompraContainer p {
+        margin: 10px ;
+        flex-direction: row;
+        max-width: none;
+        width: 100%;
+    }
+
+    .itemDetalleCompraContainer p span {
+        font-size: calc(10px + 1vw);
+    }
+}

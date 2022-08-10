@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Descripcion({title,descripcion}) {
+function Descripcion({titulo,descripcion}) {
 
   return (
     <article>
         <div>
-            <h4>{title}</h4>                    
+            <h4>{titulo}</h4>                    
             <p>{descripcion}</p>
          </div>
     </article>
